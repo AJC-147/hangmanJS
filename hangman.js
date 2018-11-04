@@ -19,7 +19,7 @@ var blanksLetters = [];
 var incorrectLetters = [];
 
 var isAlpha = function(ch){
-    if (ch >= "A" && ch <= "z"){
+    if (ch >= "A" && ch <= "z") {
         return true
     }
 
@@ -127,6 +127,7 @@ function next() {
   document.getElementById("wins").innerHTML = wins;
 
   //win alert, also display word
+  alert("Yes! You guessed " + currentPersona)
 
   hangmanJS();
 
@@ -139,6 +140,7 @@ function next() {
     document.getElementById("losses").innerHTML = losses;
 
     //loss alert, display word
+    alert("The persona was " + currentPersona)
 
     hangmanJS();
 
